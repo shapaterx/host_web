@@ -1,0 +1,16 @@
+.course{
+    font-weight: 900;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.main_course{
+    display: grid
+    ;
+        color: white;
+        grid-template-columns: repeat(4, 1fr);
+        
+        GAP: 16PX;
+       
+}

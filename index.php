@@ -6,6 +6,7 @@ include 'connection.php';
 
 
 
+
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     $name = $_POST['name'];
 $f_name = $_POST['fathername'];
@@ -40,39 +41,10 @@ else{
 </head>
 
 <body>
-    <section class="header">
-
-        <div class="container">
-            <nav class="navbar">
-                <div class="branding">
-                    <img src="assets/academy logo.png" alt="" width="65px">
-                    <span>Creative Minds</span>
-                </div>
-
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li>
-                        <a class="check" onclick="megamenu()">Course <i class="fa-solid fa-caret-down"></i></a>
-                        <div class="megamenu">
-                            <ul class="mega-menu">
-                                <li><a href="#"><i class="fas fa-code"></i> Web Development</a></li>
-                                <li><a href="#"><i class="fas fa-desktop"></i> Graphic Designing</a></li>
-                                <li><a href="#"><i class="fas fa-chart-line"></i> Digital Marketing</a></li>
-                                <li><a href="#"><i class="fas fa-drafting-compass"></i> AutoCAD 2D 3D</a></li>
-                                <li><a href="#"><i class="fas fa-video"></i> Video Editing</a></li>
-                                <li><a href="#"><i class="fas fa-shopping-cart"></i> E-Commerce</a></li>
-                                <li><a href="#"><i class="fas fa-cube"></i> 3D Modeling</a></li>
-                                <li><a href="#"><i class="fas fa-language"></i> Spoken English</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Who We Are</a></li>
-                    <li><a href="#">Instructors</a></li>
-                    <li><a href="#">Success Stories</a></li>
-                </ul>
-            </nav>
-        </div>
-    </section>
+    <?php 
+    include( "components/header.php");
+    
+    ?>
     <section class="theme">
         <div class="container-1">
         <div class="main_theme">
